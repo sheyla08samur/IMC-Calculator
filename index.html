@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div id="getinfoContainer">
+      <form action="">
+        <h1 class="title">✨Calculadora IMC✨</h1>
+        <label class="campo" for="Nombre">Nombre</label>
+        <input type="text" placeholder="Sheyla Samur"  id="name">
+        <label class="campo" for="Nombre">Edad</label>
+        <input type="number" placeholder="25" id="age">
+        <label class="campo" for="Nombre">Peso</label>
+        <input type="nubmer" placeholder="63.2" id="weightPatient">
+        <label class="campo" for="Nombre">Estatura</label>
+        <input type="number" placeholder="1.61" id="heightPatient">
+      </form>
+        <br>
+        <br>
+      </form>
+      <button id="btnCalculate">Calcular</button>
+    </div>
+    <div id="resultContainer">
+      <div id="result">
+        <h1>Resultados IMC</h1>
+        <P id="imcResult"></P>
+        <p id="imcStatus"></p>
+        <img id="image" src="" alt="">
+        <button id="btnNewCal">Nuevo</button>
+      </div>
+    </div>
+  </body>
+</html>
