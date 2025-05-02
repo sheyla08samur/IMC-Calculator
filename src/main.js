@@ -1,6 +1,7 @@
 document.getElementById("btnCalculate").addEventListener("click", obtainInfo);
 document.getElementById("btnNewCal").addEventListener("click",limpiar);
- const form= document.querySelector("form");
+const form= document.querySelector("form");
+const allInputs= form.querySelectorAll("input")
 
 function obtainInfo() {
   const name = document.getElementById("name").value;
@@ -8,10 +9,12 @@ function obtainInfo() {
   const weightPatient = (document.getElementById("weightPatient").value);
   const heightPatient = (document.getElementById("heightPatient").value);
 
+  
+  
   const imc = (weightPatient / (heightPatient ** 2)).toFixed(2);
   let msjStatus = "";
   let image = "";
-
+  
   const msjIMC = `Su IMC es: ${imc}`;
   
   if (imc > 30) {
@@ -23,17 +26,18 @@ function obtainInfo() {
   } else if (imc > 18.5) {
     msjStatus = "🎉 Tienes un peso saludable.";
     image = "../src/Imgs/imc-img2.png";
-  } else {
+  } else if (imc < 18.5){
     msjStatus = "🚨 Estás por debajo del peso saludable.";
     image = "../src/Imgs/imc-img1.png";
+  } else {
+    msjStatus = "🚨 Error al ingresar los datos.";
   }
-//falta la validación de si no meten ningun valor
-
-
+  
   document.getElementById("imcResult").textContent = msjIMC;
   document.getElementById("imcStatus").textContent = msjStatus;
   document.getElementById("image").src = image;
-
+  allInputs.forEach(element => element.disabled = true)
+  
   //add .desable
 }
 
@@ -42,4 +46,5 @@ function limpiar() {
   document.getElementById("age").value=""
   document.getElementById("weightPatient").value=""
   document.getElementById("heightPatient").value=""
+  allInputs.forEach(element => element.disabled = false)
 }

@@ -1,0 +1,88 @@
+body {
+    background-color: #ffe6f0; /* rosa pastel */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #8b005d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  h1.title {
+    color: #ff75ba;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    background-color: #fff0f5;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #f3c1d6;
+    width: 300px;
+  }
+  
+  .campo {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+  
+  input {
+    width: 90%;
+    padding: 0.3rem;
+    border: 1px solid #aa5a82;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .getinfoContainer{
+    display: flex;
+    justify-items: center;
+  }
+  
+  button {
+    background-color: #ffb6c1;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 1.3vh 1.6vw;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    justify-self: center;
+  }
+  
+  button:hover {
+    background-color: #ff75ba;
+  }
+  
+  #resultContainer {
+    margin-top: 1vh;
+    text-align: center;
+  }
+  
+  #result h1 {
+    color: #ff75ba;
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  #imcResult,
+  #imcStatus {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0.5vh 0;
+  }
+  
+  #image {
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    max-width: 150px;
+    border-radius: 15px;
+  }
