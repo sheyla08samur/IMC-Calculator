@@ -13,7 +13,8 @@ body {
     color: #ff75ba;
     text-align: center;
     font-size: 1.7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1vh;
+    margin-top: 0.5vh;
   }
   
   form {
@@ -26,14 +27,14 @@ body {
   
   .campo {
     display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
     font-size: 1rem;
   }
   
   input {
     width: 90%;
-    padding: 0.3rem;
+    padding: 0.8vh;
     border: 1px solid #aa5a82;
     border-radius: 10px;
     font-size: 0.7rem;
@@ -50,7 +51,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 15px;
-    padding: 1.3vh 1.6vw;
+    padding: 1.3vh 9.5vw;
     font-size: 0.8rem;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -70,7 +71,7 @@ body {
   #result h1 {
     color: #ff75ba;
     font-size: 1.7rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.4vh;
   }
   
   #imcResult,

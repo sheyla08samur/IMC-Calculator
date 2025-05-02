@@ -48,6 +48,6 @@ function limpiar() {
   document.getElementById("age").value=""
   document.getElementById("weightPatient").value=""
   document.getElementById("heightPatient").value=""
-
   allInputs.forEach(element => element.disabled = false)
+  document.getElementById('resultContainer').style.display = 'none';
 }
