@@ -8,6 +8,7 @@ function obtainInfo() {
   const age = document.getElementById("age").value;
   const weightPatient = (document.getElementById("weightPatient").value);
   const heightPatient = (document.getElementById("heightPatient").value);
+  const allInputs= form.querySelectorAll("input")
 
   
   
@@ -32,7 +33,8 @@ function obtainInfo() {
   } else {
     msjStatus = "🚨 Error al ingresar los datos.";
   }
-  
+  document.getElementById('resultContainer').style.display = 'block';
+
   document.getElementById("imcResult").textContent = msjIMC;
   document.getElementById("imcStatus").textContent = msjStatus;
   document.getElementById("image").src = image;
@@ -46,5 +48,6 @@ function limpiar() {
   document.getElementById("age").value=""
   document.getElementById("weightPatient").value=""
   document.getElementById("heightPatient").value=""
+
   allInputs.forEach(element => element.disabled = false)
 }

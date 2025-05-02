@@ -64,6 +64,7 @@ body {
   #resultContainer {
     margin-top: 1vh;
     text-align: center;
+    display: none;
   }
   
   #result h1 {
